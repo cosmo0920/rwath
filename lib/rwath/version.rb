@@ -1,3 +1,3 @@
-module Rwath
+class Rwath
   VERSION = "0.0.1"
 end
