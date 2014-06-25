@@ -4,6 +4,23 @@
 
 ## Installation
 
+Before you use `rwath`, please install `swath`.
+
+### Debian like Linux distributions
+
+```bash
+$ sudo apt get install swath
+```
+
+### OSX with homebrew
+
+Using my unoffical formula of `swath`:
+
+```bash
+$ brew tap cosmo0920/tokenizers
+$ brew install cosmo0920/tokenizers/swath
+```
+
 Add this line to your application's Gemfile:
 
     gem 'rwath'
