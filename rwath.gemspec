@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.name          = "rwath"
   spec.version       = Rwath::VERSION
   spec.authors       = ["cosmo0920"]
-  spec.email         = ["cosmo0920.wp@gamil.com"]
+  spec.email         = ["cosmo0920.wp@gmail.com"]
   spec.summary       = %q{Wrapper gem for Swath(Smart Word Analysis for THai).}
   spec.description   = %q{RWath is ruby wrapper gem for Swath(Smart Word Analysis for THai).}
   spec.homepage      = "https://github.com/cosmo0920/rwath"
