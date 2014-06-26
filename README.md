@@ -21,6 +21,8 @@ $ brew tap cosmo0920/tokenizers
 $ brew install cosmo0920/tokenizers/swath
 ```
 
+### install rwath
+
 Add this line to your application's Gemfile:
 
     gem 'rwath'
