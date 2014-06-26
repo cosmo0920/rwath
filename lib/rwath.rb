@@ -1,9 +1,10 @@
 require "rwath/process"
+require "rwath/config"
 require "rwath/version"
 
 class Rwath
-  def initialize(delimitor: '|')
-    @process = Process.new("swath -u u,u -b \"#{delimitor}\"")
+  def initialize(config: Config.new)
+    @process = Process.new("swath #{config.to_s}")
   end
 
   def split(text)

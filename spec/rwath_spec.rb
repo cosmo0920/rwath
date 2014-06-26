@@ -7,14 +7,21 @@ describe Rwath do
   it { should respond_to :split }
 
   describe "#split" do
-    context "when nothing specify delimitor" do
+    context "when nothing specify" do
       subject { rwath.split('ตัวอักษรไทยเป็นเรื่องยาก') }
-      it { should eq 'ตัว|อักษร|ไทย|เป็น|เรื่อง|ยาก'}
+      it "output with TIS-620 encoding by default" do
+        should eq '฀ัวอั฀ษรเ฀ยเ฀เ฀เรืเอ฀ยา฀'
+      end
     end
 
     context "when specify delimitor" do
       let (:space) { ' ' }
-      let (:rwath_with_delimitor) { Rwath.new(delimitor: " ")}
+      let (:config) { Rwath::Config.new }
+      let (:setting) do
+        config.delimitor(char: space)
+        config.encode(input: 'u', output: 'u')
+      end
+      let (:rwath_with_delimitor) { Rwath.new(config: setting) }
       subject { rwath_with_delimitor.split('ตัวอักษรไทยเป็นเรื่องยาก') }
       it { should eq 'ตัว อักษร ไทย เป็น เรื่อง ยาก'}
     end
