@@ -10,12 +10,12 @@ class Rwath
     end
 
     def encode(input: 'u', output: 'u')
-      @setting.concat(" -u #{validate_encode(input)},#{validate_encode(output)}")
+      @setting.concat(" -u #{validate_encoding(input)},#{validate_encoding(output)}")
     end
 
     private
 
-    def validate_encode(str)
+    def validate_encoding(str)
       case str.downcase.to_sym
       when :u, :utf8, :"utf-8"
         return 'u'
