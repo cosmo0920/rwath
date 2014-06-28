@@ -1,5 +1,7 @@
 # Rwath
 
+[![Build Status](https://travis-ci.org/cosmo0920/rwath.svg?branch=master)](https://travis-ci.org/cosmo0920/rwath)
+
 `rwath` is simple wrapper for Swath(Smart Word Analysis for THai).
 
 ## Installation
