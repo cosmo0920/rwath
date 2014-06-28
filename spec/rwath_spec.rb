@@ -1,10 +1,5 @@
 # -*- coding: utf-8 -*-
-require "rwath"
-
-RSpec.configure do |c|
-  # declare an exclusion filter
-  c.filter_run_excluding :spec_ci => false if ENV["CI"]
-end
+require "spec_helper"
 
 describe Rwath do
   let(:rwath) { Rwath.new }
