@@ -1,0 +1,16 @@
+language: ruby
+
+rvm:
+  - 2.0
+  - 2.1
+
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+
+before_install:
+  - sudo apt-get install swath
+
+script:
+  - bundle install
+  - bundle exec rspec
