@@ -1,0 +1,8 @@
+language: ruby
+
+before_install:
+  - sudo apt-get install swath
+
+script:
+  - bundle install
+  - bundle exec rspec
