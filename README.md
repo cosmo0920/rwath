@@ -11,7 +11,7 @@ Before you use `rwath`, please install `swath`.
 ### Debian like Linux distributions
 
 ```bash
-$ sudo apt get install swath
+$ sudo apt-get install swath
 ```
 
 ### OSX with homebrew
